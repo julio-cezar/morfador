@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Morfador</string>
+    <string name="hello_world">Informe em que molalidade você esta.</string>
+    <string name="player">Player</string>
+    <string name="nerd">NERD</string>
+    <string name="gamer">Gamer</string>
+    <string name="sexy">Sexy</string>
+    <string name="dormindo">Dormindo</string>
+    <string name="respirando">Respirando</string>
+    <string name="gay">Gay</string>
+    <string name="aquilo">Fazendo</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
