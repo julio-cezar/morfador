@@ -30,7 +30,8 @@
             <Button
                 android:id="@+id/button1"
                 style="@style/style_buton"
-                android:text="@string/player" />
+                android:text="@string/player"
+                 />
 
             <Button
                 android:id="@+id/button2"
