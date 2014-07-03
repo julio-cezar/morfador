@@ -2,6 +2,7 @@
 <resources>
         <color name="brancoAzulado">#ebfcfc</color>
         <color name="rosa">#f5d0ce</color>
+        <color name="rosaForte">#f49f9a</color>
         <color name="brancotext">#ffffff</color>    
  
 </resources>

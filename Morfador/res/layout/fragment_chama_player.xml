@@ -4,91 +4,118 @@
     android:layout_height="match_parent"
     android:background="@color/rosa"
     android:gravity="center_horizontal"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.opendoor.morfador.ChamaPlayer$PlaceholderFragment" >
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical" >
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/rosaForte"
+        android:gravity="center_horizontal" >
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textTitulo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/p.onde"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-             />
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/seletor_textview"
-            android:ems="10"
-            android:layout_marginBottom="20dp"
-            android:inputType="textAutoComplete" >
-
-            <requestFocus />
-        </EditText>
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/p.mapa"
-            android:layout_marginBottom="20dp" />
+            android:layout_gravity="center"
+            android:text="@string/modo"
+            android:layout_marginRight="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="fill_parent"
+            android:id="@+id/textTitulo2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/p.modalidade"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-             />
+            android:layout_gravity="center"
+            android:text="Player"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/seletor_textview"
-            android:ems="10"
-            android:layout_marginBottom="20dp"
-            android:inputType="textAutoComplete" />
+        <TextView
+            android:id="@+id/textTitulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ativado"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView1"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/modoPlayer"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
         android:layout_alignParentBottom="true"
-        android:text="@string/p.foto" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LinearLayout1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignRight="@+id/linearLayout1"
-        android:text="@string/p.compartilhar" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p.onde"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/seletor_textview"
+                android:ems="10"
+                android:inputType="textAutoComplete" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/p.mapa" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/p.modalidade"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/seletor_textview"
+                android:ems="10"
+                android:inputType="textAutoComplete" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button987698"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:text="@string/p.foto" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button987698"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:text="@string/p.compartilhar" />
+    </RelativeLayout>
 
 </RelativeLayout>

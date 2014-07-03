@@ -12,7 +12,8 @@
     <string name="gay">Gay</string>
     <string name="aquilo">Fazendo</string>
     <string name="action_settings">Settings</string>
-    <string name="modoPlayer">Modo Player Ativado.</string>
+    <string name="modo">Modo</string>
+    <string name="ativado">ativado.</string>
     <string name="p.onde">Onde?</string>
     <string name="p.mapa">Adicionar mapa?</string>
     <string name="p.modalidade">O que estou fazendo nesta modalidade.</string>
