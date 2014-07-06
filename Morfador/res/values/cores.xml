@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <color name="brancoAzulado">#ebfcfc</color>
+        <color name="azul">#99f2f2</color>
         <color name="rosa">#f5d0ce</color>
         <color name="rosaForte">#f49f9a</color>
         <color name="brancotext">#ffffff</color>    
