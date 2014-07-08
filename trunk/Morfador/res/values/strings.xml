@@ -20,5 +20,6 @@
     <string name="p.foto">Foto</string>
     <string name="p.compartilhar">Compartilhar</string>
     <string name="title_activity_chama_player">ChamaPlayer</string>
+    <string name="compartilarAmigos">Compartilhe com o seu grupo.</string>
 
 </resources>
