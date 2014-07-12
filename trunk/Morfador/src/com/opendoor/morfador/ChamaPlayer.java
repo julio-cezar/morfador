@@ -1,15 +1,16 @@
 package com.opendoor.morfador;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ChamaPlayer extends ActionBarActivity {
 
@@ -60,6 +61,16 @@ public class ChamaPlayer extends ActionBarActivity {
 					container, false);
 			return rootView;
 		}
+	}
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		Intent i = getIntent();
+		String texto = i.getStringExtra("modalidade");
+		//String texto = i.getExtras().toString();
+		TextView bt1 = (TextView) findViewById(R.id.textTitulo2);
+		bt1.setText(texto);
 	}
 
 }
