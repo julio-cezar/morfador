@@ -21,5 +21,9 @@
     <string name="p.compartilhar">Compartilhar</string>
     <string name="title_activity_chama_player">ChamaPlayer</string>
     <string name="compartilarAmigos">Compartilhe com o seu grupo.</string>
+    <string name="title_activity_notificacao">NotificacaoActivity</string>
+    
+    
+    <string name="notificacao">Notificações</string>
 
 </resources>

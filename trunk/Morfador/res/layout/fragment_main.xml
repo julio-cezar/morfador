@@ -58,14 +58,15 @@
             android:gravity="center_horizontal" >
 
             <Button
-                android:id="@+id/btA"
+                android:id="@+id/btp1"
                 style="@style/style_buton"
                 android:text="@string/player"
+                android:onClick="chamaPlayer"
                 android:background="@drawable/seletor_botao"
                 />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btp2"
                 style="@style/style_buton"
                 android:layout_marginLeft="30dp"
                 android:text="@string/nerd"
@@ -79,13 +80,13 @@
             android:layout_marginBottom="30dp" >
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btp3"
                 style="@style/style_buton"
                 android:text="@string/sexy"
                 android:background="@drawable/seletor_botao_escuro" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btp4"
                 style="@style/style_buton"
                 android:layout_marginLeft="30dp"
                 android:text="@string/gamer"
@@ -101,13 +102,13 @@
              >
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btp5"
                 style="@style/style_buton"
                 android:text="@string/dormindo"
                 android:background="@drawable/seletor_botao" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btp6"
                 style="@style/style_buton"
                 android:layout_marginLeft="30dp"
                 android:text="@string/respirando"
@@ -121,13 +122,13 @@
              >
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btp7"
                 style="@style/style_buton"
                 android:text="@string/gay"
                 android:background="@drawable/seletor_botao_escuro" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btp8"
                 style="@style/style_buton"
                 android:layout_marginLeft="30dp"
                 android:text="@string/aquilo"
