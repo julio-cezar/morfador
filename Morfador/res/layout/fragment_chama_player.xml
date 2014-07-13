@@ -87,7 +87,7 @@
                     android:inputType="textAutoComplete" />
 
                 <Button
-                    android:id="@+id/btA"
+                    android:id="@+id/btp1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#888888"
@@ -141,6 +141,7 @@
 
             </LinearLayout>
         </ScrollView>
+
     </RelativeLayout>
 
 </RelativeLayout>
