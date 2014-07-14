@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Morfador</string>
-    <string name="hello_world">Informe em que molalidade você esta.</string>
+    <string name="hello_world">Informe em que modalidade você esta.</string>
     <string name="player">Player</string>
     <string name="nerd">NERD</string>
     <string name="gamer">Gamer</string>
@@ -24,5 +24,7 @@
     <string name="title_activity_notificacao">NotificacaoActivity</string>
     <string name="notificacao">Notificações</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_camera">CameraActivity</string>
+   <string name="tap">Tap the image to open the camera!!</string>
 
 </resources>
