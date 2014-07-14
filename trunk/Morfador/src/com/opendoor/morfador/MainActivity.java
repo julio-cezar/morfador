@@ -33,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onStart() {
     	// TODO Auto-generated method stub
     	super.onStart();
-    		final Button bt1 = (Button) findViewById(R.id.btp1);
+    		final Button bt1 = (Button) findViewById(R.id.btMapa);
 	        bt1.setOnClickListener(new Button.OnClickListener() {
 				@Override	
 				public void onClick(View v) {

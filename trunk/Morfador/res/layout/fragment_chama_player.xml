@@ -81,13 +81,12 @@
                     android:id="@+id/editText1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    
                     android:background="@drawable/seletor_textview"
                     android:ems="10"
                     android:inputType="textAutoComplete" />
 
                 <Button
-                    android:id="@+id/btp1"
+                    android:id="@+id/btMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#888888"
@@ -108,7 +107,7 @@
                     android:layout_height="50dp"
                     android:background="@drawable/seletor_textview"
                     android:ems="10"
-                    android:inputType="textAutoComplete" />
+                    android:inputType="textAutoComplete"/>
 
                 <TextView
                     android:id="@+id/textView1"
@@ -125,13 +124,15 @@
                     android:layout_marginTop="10dp" >
 
                     <Button
-                        android:id="@+id/button987698"
+                        android:id="@+id/btcamera"
                         android:layout_width="60dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/seletor_camera" />
+                        android:background="@drawable/seletor_camera"/>
+                        
+                      
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/btCompartilhar"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:background="@drawable/seletorcompartilhar"

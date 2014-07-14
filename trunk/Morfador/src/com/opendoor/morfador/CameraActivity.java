@@ -1,6 +1,7 @@
 package com.opendoor.morfador;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -8,30 +9,41 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageView;
 
-public class ChamaPlayer extends ActionBarActivity {
-
+public class CameraActivity extends ActionBarActivity {
+	ImageView imgFavorite;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_chama_player);
-
+		setContentView(R.layout.activity_camera);
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-		
+		 
+	   
 	}
+	
+	 public void open(){
+	      Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+	      startActivityForResult(intent, 0);
+	   }
+
+	   @Override
+	   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	      // TODO Auto-generated method stub
+	      super.onActivityResult(requestCode, resultCode, data);
+	      Bitmap bp = (Bitmap) data.getExtras().get("data");
+	      imgFavorite.setImageBitmap(bp);
+	   }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.chama_player, menu);
+		getMenuInflater().inflate(R.menu.camera, menu);
 		return true;
 	}
 
@@ -58,7 +70,7 @@ public class ChamaPlayer extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_chama_player,
+			View rootView = inflater.inflate(R.layout.fragment_camera,
 					container, false);
 			return rootView;
 		}
@@ -67,28 +79,12 @@ public class ChamaPlayer extends ActionBarActivity {
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		Intent i = getIntent();
-		String texto = i.getStringExtra("modalidade");
-		//String texto = i.getExtras().toString();
-		TextView tv1 = (TextView) findViewById(R.id.textTitulo2);
-		tv1.setText(texto);
-
-		 final Button btcamera = (Button) findViewById(R.id.btcamera);
-		 btcamera.setOnClickListener(new Button.OnClickListener() {
-				@Override	
-				public void onClick(View v) {
-					
-					Intent i = new Intent(ChamaPlayer.this, CameraActivity.class);
-					startActivity(i);
-				} 
-		 });
-		
+		   imgFavorite = (ImageView)findViewById(R.id.imageView1);
+		      imgFavorite.setOnClickListener(new OnClickListener() {
+		         @Override
+		         public void onClick(View v) {
+		            open();
+		         }
+		      });
 	}
-	
-	/**
-	 * Hides the soft keyboard
-	 */
-
-	
-
 }
